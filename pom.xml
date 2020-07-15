@@ -10,7 +10,7 @@
 
   <name>apereo-cas-attack</name>
   <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>https://github.com/vulhub/Apereo-CAS-Attack</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -25,11 +25,9 @@
       <version>1.0.3</version>
     </dependency>
     <dependency>
-      <groupId>com.github.frohoff</groupId>
+      <groupId>ysoserial</groupId>
       <artifactId>ysoserial</artifactId>
-      <scope>system</scope>
       <version>0.0.6</version>
-      <systemPath>${project.basedir}/ysoserial/ysoserial-master-30099844c6-1.jar</systemPath>
     </dependency>
 
   </dependencies>
@@ -108,4 +106,10 @@
       </plugin>
     </plugins>
   </build>
+  <repositories>
+    <repository>
+      <id>my-local-repo</id>
+      <url>file://${project.basedir}/my-repo</url>
+    </repository>
+  </repositories>
 </project>
