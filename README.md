@@ -1,5 +1,9 @@
 # Apereo-CAS attack
 
+## Download
+
+[Click here](https://github.com/vulhub/Apereo-CAS-Attack/releases) to download latest binary JAR archive.
+
 ## Installation
 
 Steps to install:
